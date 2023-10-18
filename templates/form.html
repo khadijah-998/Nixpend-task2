@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <form method="POST" action="/generate_pdf">
+        <div class="divStyle">
+            <h1>USER INFORMATION</h1>
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" name="full_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="tel" name="phone_number" required><br><br>
+
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
